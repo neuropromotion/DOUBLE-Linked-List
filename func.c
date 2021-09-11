@@ -2,6 +2,7 @@
 #include "func.h"
 
 
+static void AddFromFile (List ** plist, Node * pnew);
 short menu ()
 {
     short ch;
@@ -174,7 +175,7 @@ bool GetFileName (char * st, int sz)
 
 
 
-void AddFromFile (List ** plist, Node * pnew)
+static void AddFromFile (List ** plist, Node * pnew)
 {
     if (ListIsEmpty(plist))
     {
